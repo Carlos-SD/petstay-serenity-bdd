@@ -46,4 +46,7 @@ target/
 
 ### Local tooling ###
 .idea/
-.claude/
+# AI assistant setup: only the project instructions are versioned
+.claude/*
+!.claude/CLAUDE.md
+!.claude/docs/

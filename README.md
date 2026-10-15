@@ -54,6 +54,11 @@ Cada escenario tiene:
 Los escenarios #17 y #18 fallan a propósito: la app aplica el descuento con `noches >= 7` (la HU dice *más de 7*)
 y cobra el paseo una sola vez (la HU dice *por noche*).
 
+## Uso de IA
+El proyecto se trabajó con Claude Code configurado como tutor. Las reglas están en `.claude/`:
+`CLAUDE.md` (contexto y estado del proyecto), `docs/instrucciones-ia-tutor-serenity.md` (rol, límites y flujo
+de trabajo) y `docs/guia-serenity-bdd.md` (referencia técnica).
+
 ## Ejecución
 ```bash
 ./gradlew clean test                                     # toda la suite (headless)
